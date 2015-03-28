@@ -6,12 +6,12 @@ var mysql = require('mysql');
 
 
 
-dbConnection = mysql.createConnection({
+var dbConnection = mysql.createConnection({
       user: "root",
       password: "",
       database: "chat"
     });
-    dbConnection.connect();
+ 
+dbConnection.connect();
 
-
-    
+module.exports = dbConnection;
